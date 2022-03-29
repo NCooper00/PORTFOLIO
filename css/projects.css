@@ -114,7 +114,7 @@
 
 .website {
     position: relative;
-    width: 100%;
+    width: 100vw;
     left: 0%;
     aspect-ratio: 2.06;
     background-color: black;
