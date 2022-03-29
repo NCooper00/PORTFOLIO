@@ -1,0 +1,48 @@
+.SKILLS {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.techGroupHolder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.techGroup {
+    width: min(600px, 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.techHead {
+    font-size: min(2.5rem, 8vw);
+    font-family: 'Megrim', cursive;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.techList {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    /* margin-top: 2vh; */
+}
+
+.tech {
+    margin: 1.5vh;
+    text-align: center;
+    font-size: min(1rem, 4vw);
+}

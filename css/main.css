@@ -1,0 +1,211 @@
+::-webkit-scrollbar {
+    width: 10px;
+    padding-left: 10px;
+    height: 1rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+    margin-top: 74px;
+    border-top: 1px solid rgb(92, 92, 92);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #dfdfdf;
+
+  }
+
+* {
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.navigation {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid rgb(92, 92, 92);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.90);
+    backdrop-filter: blur(5px);
+}
+
+.navLinks {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    margin: 0 3vw;
+    cursor: pointer;
+    transition: margin-bottom 150ms;
+    user-select: none;
+    font-family: 'Megrim', cursive;
+    color: white;
+    font-size: min(1.75rem, 5vw);
+    text-decoration: none;
+}
+
+.link:hover {
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    animation: navclick 175ms ease-in;
+}
+
+.link:active {
+    transform: translateY(1px);
+}
+
+@keyframes navclick {
+    0% {
+        border-bottom-color: transparent;
+    }
+    100% {
+        border-bottom-color: white;
+    }
+}
+
+.SOCIALS {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.github {
+    background-image: url('../icons/github.png');
+}
+
+.linkedin {
+    background-image: url('../icons/linkedin.png');
+}
+
+.ABOUT {
+    margin-top: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.nameStack {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.NAME {
+    font-size: min(8rem, 15vw);
+    color: white;
+    font-family: 'Megrim', cursive;
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+}
+
+.fullStack {
+    font-size: min(1.75rem, 5vw);
+    font-family: 'Megrim', cursive;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.sun {
+    background-image: url('../icons/sun.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 75%;
+    z-index: -1;
+    -webkit-animation: sun 40s linear infinite;
+    -moz-animation: sun 40s linear infinite;
+    -ms-animation: sun 40s linear infinite;
+    -o-animation: sun 40s linear infinite;
+    animation: sun 40s linear infinite;
+}
+
+@keyframes sun {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+
+.aboutMeHolder {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.introduction {
+    font-family: 'Poiret One', cursive;
+    font-size: min(1.75rem, 5vw);
+    color: white;
+    width: 100%;
+    text-align: center;
+    width: min(80vw, 600px);
+    text-align: center;
+}
+
+
+
+/* @media screen and (max-width: 600px) {
+    .link {
+        font-size: max(5vw, 10px);
+    }
+    .NAME {
+        font-size: 4rem;
+    }
+} */
