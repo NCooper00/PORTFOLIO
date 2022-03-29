@@ -108,6 +108,7 @@
 
 .carousel {
     height: 100%;
+    width: 300%;
     overflow: hidden;
     display: flex;
 }
@@ -225,6 +226,7 @@
 .siteContainer {
     overflow: hidden;
     height: 100%;
+    width: 300%;
     display: flex;
 }
 
