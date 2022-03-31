@@ -1,3 +1,12 @@
+:root {
+    --main-background: black;
+    --main-font-color: white;
+    --main-icon-color: brightness(1);
+
+    --nav-color: rgba(0, 0, 0, 0.9);
+}
+
+
 .PROJECTS {
     margin-top: 95px;
     display: flex;
@@ -9,7 +18,7 @@
 }
 
 .myProjects {
-    color: white;
+    color: var(--main-font-color);
     font-size: min(3rem, 8vw);
     font-family: 'Megrim', cursive;
     font-weight: 200;
@@ -42,7 +51,7 @@
 
 .projectbtn {
     width: 50%;
-    opacity: 70%;
+    /* opacity: 70%; */
     height: 100%;
     /* background-color: aqua; */
     animation: clickPrev 1s;
@@ -50,10 +59,10 @@
     animation-iteration-count: 1;
     text-align: center;
     line-height: 50px;
-    color: white;
+    color: var(--main-font-color);
     font-family: 'Megrim', cursive;
     font-size: min(1.5rem, 5vw);
-    font-weight: 200;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -120,7 +129,7 @@
     left: 0%;
     flex: none;
     aspect-ratio: 2.06;
-    background-color: black;
+    /* background-color: black; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,7 +144,7 @@
     position: absolute;
     bottom: -1px;
     left: 0px;
-    background: rgba(0, 0, 0, 0.90);
+    background: var(--nav-color);
     border-top: 1px solid rgb(94, 94, 94);
     border-right: 1px solid rgb(94, 94, 94);
 }
@@ -147,7 +156,7 @@
     position: absolute;
     bottom: -1px;
     right: 0px;
-    background: rgba(0, 0, 0, 0.90);
+    background: var(--nav-color);
     border-top: 1px solid rgb(94, 94, 94);
     border-left: 1px solid rgb(94, 94, 94);
 }
@@ -184,6 +193,7 @@
     aspect-ratio: 1;
     cursor: pointer;
     border-radius: 50%;
+    transition: transform 250ms ease-in-out, box-shadow 300ms ease-in-out;
 }
 
 .webSITE:hover {
@@ -256,7 +266,7 @@
 }
 
 .aHead {
-    color: white;
+    color: var(--main-font-color);
     width: 100%;
     font-size: min(2rem, 6vw);
     font-family: 'Megrim', cursive;
@@ -269,8 +279,9 @@
 
 .aList {
     font-family: 'Roboto Slab', serif;
-    color: white;
+    color: var(--main-font-color);
     font-size: 1rem;
+    font-weight: 600;
     margin: 2vh 0;
     /* display: flex; */
     justify-content: center;

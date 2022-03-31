@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://ncooper00.github.io/PORTFOLIO/css/reset.css">
-    <link rel="stylesheet" href="https://ncooper00.github.io/PORTFOLIO/css/main.css">
-    <link rel="stylesheet" href="https://ncooper00.github.io/PORTFOLIO/css/pages.css">
-    <link rel="stylesheet" href="https://ncooper00.github.io/PORTFOLIO/css/skills.css">
-    <link rel="stylesheet" href="https://ncooper00.github.io/PORTFOLIO/css/projects.css">
-    <link rel="stylesheet" href="https://ncooper00.github.io/PORTFOLIO/css/contact.css">
+    <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +37,15 @@
         </div> -->
     </header>
 
-    <div class="SOCIALS">
-        <a title="GitHub" class="icon github" href="https://github.com/NCooper00" alt="Github icon" target="_blank"></a>
-        <a title="LinkedIn" class="icon linkedin" href="https://www.linkedin.com/in/nick-cooper-7aa56b223/" alt="LinkedIn icon" target="_blank"></a>
+    <div class="quickAccess">
+        <div class="SOCIALS">
+            <a title="GitHub" class="BT icon github" href="https://github.com/NCooper00" alt="Github icon" target="_blank"></a>
+            <a title="LinkedIn" class="BT icon linkedin" href="https://www.linkedin.com/in/nick-cooper-7aa56b223/" alt="LinkedIn icon" target="_blank"></a>
+        </div>
+        <div class="lightDark" aria-enabled="false">
+            <div class="BT icon DARK"></div>
+            <div class="BT icon LIGHT"></div>
+        </div>
     </div>
 
    
@@ -46,10 +54,12 @@
         <div class="ABOUT">
             <div class="nameStack">
                 <h1 class="NAME">Nick Cooper</h1>
-                <div class="fullStack">Full stack web developer</div>
+                <div class="fullStack">Web Developer and Designer</div>
             </div>
 
-            <div class="sun" alt="Sun icon">.</div>
+            <div class="sunHolder">
+                <div class="BT sun" alt="Sun icon"></div>
+            </div>
 
             <div class="aboutMeHolder">
                 <p class="introduction">Hi! I am a developer based in Seattle who loves designing and creating websites.</p>
@@ -81,6 +91,7 @@
                         <li class="tech handlebars">Handlebars</li>
                         <li class="tech ">Passport</li>
                         <li class="tech ">BCrypt</li>
+                        <li class="tech ">Mongoose</li>
                     </ul>
                 </div>
                 <div class="techGroup">
@@ -104,7 +115,7 @@
                     <div class="carousel">
                         <div class="website spaceChill">
                             <div class="iconBOXG">
-                                <a target="_blank" href="https://github.com/NCooper00/Moon-Phase-Website" alt="Github icon for Space Chill" class="webGIT"></a>
+                                <a target="_blank" href="https://github.com/NCooper00/Moon-Phase-Website" alt="Github icon for Space Chill" class="BT webGIT"></a>
                             </div>
                             <div class="iconBOXW">
                                 <a target="_blank" href="https://ncooper00.github.io/Moon-Phase-Website/" alt="Website icon for Space Chill" class="webSITE"></a>
@@ -112,7 +123,7 @@
                         </div>
                         <div class="website crescentsArcana">
                             <div class="iconBOXG">
-                                <a target="_blank" href="https://github.com/NCooper00/Crescents-Arcana" alt="Github icon for Crescent's Arcana" class="webGIT"></a>
+                                <a target="_blank" href="https://github.com/NCooper00/Crescents-Arcana" alt="Github icon for Crescent's Arcana" class="BT webGIT"></a>
                             </div>
                             <div class="iconBOXW">
                                 <a target="_blank" href="https://crescents-arcana.herokuapp.com/" alt="Website icon for Crescent's Arcana" class="webSITE"></a>
@@ -171,7 +182,8 @@
                                         <li class="ALI">Handlebars</li>
                                         <li class="ALI">Express.js</li>
                                         <li class="ALI">NodeJS</li>
-                                        <li class="ALI">MongoDB/Mongoose</li>
+                                        <li class="ALI">MongoDB</li>
+                                        <li class="ALI">Mongoose</li>
                                         <li class="ALI">Passport</li>
                                         <li class="ALI">BCrypt</li>
                                     </ul>
@@ -251,7 +263,7 @@
                 </form>
             </div>
 
-            <div data-visible="false" class="sunLoad" alt="Sun icon"></div>
+            <div data-visible="false" class="BT sunLoad" alt="Sun icon"></div>
         </div>
     </div>
     
@@ -259,5 +271,5 @@
 
     
 </body>
-<script src="https://ncooper00.github.io/PORTFOLIO/script.js"></script>
+<script src="/script.js"></script>
 </html>

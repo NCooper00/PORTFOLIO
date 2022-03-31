@@ -58,3 +58,25 @@ next.addEventListener('click', () => {
     }
  })
 
+const dark = document.querySelector('.DARK');
+const light = document.querySelector('.LIGHT');
+const LD = document.querySelector('.lightDark');
+
+const root = document.documentElement;
+
+LD.addEventListener('click', () => {
+    var LDStat = LD.getAttribute('aria-enabled');
+    if (LDStat === "false") {
+        LD.setAttribute('aria-enabled', true)
+        root.style.setProperty('--main-background', "rgb(225, 225, 225)")
+        root.style.setProperty('--main-font-color', "rgb(24, 24, 24)")
+        root.style.setProperty('--nav-color', "rgba(225, 225, 225, 0.90)")
+        root.style.setProperty('--main-icon-color', "brightness(0)")
+    } else {
+        LD.setAttribute('aria-enabled', false)
+        root.style.setProperty('--main-background', "black")
+        root.style.setProperty('--main-font-color', "white")
+        root.style.setProperty('--nav-color', "rgba(0, 0, 0, 0.90)")
+        root.style.setProperty('--main-icon-color', "brightness(1)")
+    }
+}) 

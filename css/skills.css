@@ -1,3 +1,10 @@
+:root {
+    --main-background: black;
+    --main-font-color: white;
+    --main-icon-color: brightness(1);
+}
+
+
 .SKILLS {
     margin-top: 100px;
     display: flex;
@@ -31,12 +38,12 @@
     font-family: 'Megrim', cursive;
     font-weight: 200;
     text-align: center;
-    color: white;
+    color: var(--main-font-color);
     width: 100%;
 }
 
 .techList {
-    color: white;
+    color: var(--main-font-color);
     font-family: 'Roboto Slab', serif;
     /* margin-top: 2vh; */
 }
@@ -45,4 +52,5 @@
     margin: 1.5vh;
     text-align: center;
     font-size: min(1rem, 4vw);
+    font-weight: 600;
 }

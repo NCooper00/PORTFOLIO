@@ -1,3 +1,9 @@
+:root {
+    --main-background: black;
+    --main-font-color: rgb(255, 255, 255);
+    --main-icon-color: brightness(1);
+}
+
 .CONTACT {
     margin-top: 75px;
     display: flex;
@@ -10,7 +16,7 @@
 
 .startProject {
     font-family: 'Megrim', cursive;
-    color: white;
+    color: var(--main-font-color);
     font-weight: 200;
     font-size: min(4rem, 11vw);
     width: 100%;
@@ -22,7 +28,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color: white;
+    color: var(--main-font-color);
     font-weight: 200;
     text-align: center;
 }
@@ -37,7 +43,7 @@
 
 .emailForm {
     font-family: 'Megrim', cursive;
-    color: white;
+    color: var(--main-font-color);
     font-weight: 200;
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +74,7 @@
     margin-right: 10px;
     width: 80%;
     font-weight: 200;
-    color: rgb(233, 233, 233);
+    color: rgb(138, 138, 138);
     /* text-align: left; */
 }
 
@@ -77,7 +83,7 @@
     margin-bottom: 10px;
     font-size: 1.25rem;
     font-weight: 200;
-    color: rgb(233, 233, 233);
+    color: rgb(138, 138, 138);
 }
 
 input {
@@ -90,7 +96,7 @@ input {
     border: none;
     border-bottom: 1px solid rgb(99, 99, 99);
     font-weight: 500;
-    color: white;
+    color: var(--main-font-color);
     padding: 0px 3px;
 }
 
@@ -104,7 +110,7 @@ textarea {
     margin-top: 5px;
     /* border-top: 1px solid rgb(99, 99, 99); */
     border-bottom: 1px solid rgb(99, 99, 99);
-    color: white;
+    color: var(--main-font-color);
     padding: 0px 3px;
 }
 
@@ -112,7 +118,7 @@ textarea {
     font-size: min(3rem, 8vw);
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--main-font-color);
     cursor: pointer;
     transition: transform 150ms;
 }
