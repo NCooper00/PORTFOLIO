@@ -41,6 +41,7 @@
         <div class="SOCIALS">
             <a title="GitHub" class="BT icon github" href="https://github.com/NCooper00" alt="Github icon" target="_blank"></a>
             <a title="LinkedIn" class="BT icon linkedin" href="https://www.linkedin.com/in/nick-cooper-7aa56b223/" alt="LinkedIn icon" target="_blank"></a>
+            <a title="Resume" class="BT icon resume" href="https://drive.google.com/file/d/1-p66rZbyAN6d4Gws6YlPGmKMFP0NVirH/view?usp=sharing" alt="Resume icon" target="_blank"></a>
         </div>
         <div class="lightDark" aria-enabled="false">
             <div class="BT icon DARK"></div>
@@ -249,19 +250,20 @@
                 <form action="https://formspree.io/f/xrgjakzk" method="POST" class="emailForm">
                     <div class="formGroup">
                         <!-- <label for="clientName" class="label nameLabel">NAME</label> -->
-                        <input placeholder="Enter Name..." type="text" id="input clientName" name="Name">
+                        <input required="true" placeholder="Enter Name..." type="text" id="input clientName" name="Name">
                     </div>
                     <div class="formGroup">
                         <!-- <label for="clientEmail" class="label emailLabel">EMAIL</label> -->
-                        <input placeholder="Email Address..." type="email" id="input clientEmail" name="Email">
+                        <input required="true" placeholder="Email Address..." type="email" id="input clientEmail" name="Email">
                     </div>
                     <div class="formGroup">
                         <!-- <label for="clientIdea" class="label ideaLabel">What's on your mind?</label> -->
-                        <textarea rows="5" placeholder="What's on your mind?" name="Message" id="message clientIdea"></textarea>
+                        <textarea required="true" rows="5" placeholder="What's on your mind?" name="Message" id="message clientIdea"></textarea>
                     </div>
                     <button class="sendIdea">Submit</button>
                 </form>
             </div>
+            <div class="success">Success!</div>
 
             <div data-visible="false" class="BT sunLoad" alt="Sun icon"></div>
         </div>
